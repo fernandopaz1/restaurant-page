@@ -1,1 +1,1 @@
-console.log("Hola Mundo!");
+(()=>{"use strict";document.body.appendChild((()=>{const e=document.createElement("div");e.className="bar";const n=document.createElement("div");return n.innerHTML="Menu",e.appendChild(n),e})())})();
