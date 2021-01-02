@@ -6,8 +6,8 @@ const divButton = (text, action) => {
     content.innerHTML = text;
     element.appendChild(content);
 
-    element.addEventListener((e) => {
-        action();
+    element.addEventListener("click", (e) => {
+        action(e);
     });
     return element;
 };
