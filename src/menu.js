@@ -1,6 +1,9 @@
+import divButton from "./divButton";
+
 const menu = () => {
-    const element = document.createElement("div");
-    element.className = "bar";
+    const element = divButton("Menu", (e) => {
+        console.log("Menu");
+    });
 
     const menu = document.createElement("div");
     menu.innerHTML = "Menu";

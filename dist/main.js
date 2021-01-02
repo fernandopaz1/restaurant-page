@@ -1,1 +1,1 @@
-(()=>{"use strict";document.body.appendChild((()=>{const e=document.createElement("div");e.className="bar";const n=document.createElement("div");return n.innerHTML="Menu",e.appendChild(n),e})())})();
+(()=>{"use strict";document.body.appendChild((()=>{const e=((e,n)=>{const t=document.createElement("div");t.className="divButton";const d=document.createElement("div");return d.innerHTML=e,t.appendChild(d),t.addEventListener((e=>{n()})),t})("Menu",(e=>{console.log("Menu")})),n=document.createElement("div");return n.innerHTML="Menu",e.appendChild(n),e})())})();
