@@ -16,3 +16,4 @@
 .cache
 .eslintcache
 package-lock.json
+*.swp

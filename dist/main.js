@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+console.log("Hola Mundo!");
+=======
+>>>>>>> 1b515ce... version con ts y sass
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is not neither made for production nor for readable output files.
@@ -110,4 +116,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	__webpack_require__("./src/index.ts");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
+<<<<<<< HEAD
 ;
+=======
+;
+>>>>>>> 46c1e90... ahora compila typescript y sass con webpack
+>>>>>>> 1b515ce... version con ts y sass
