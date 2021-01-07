@@ -1,12 +1,11 @@
 const path = require("path");
-
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/index.ts",
     output: {
         filename: "main.js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "../dist"),
     },
     mode: "development",
     plugins: [
@@ -44,9 +43,5 @@ module.exports = {
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
-    },
-    output: {
-        filename: "main.js",
-        path: path.resolve(__dirname, "dist"),
     },
 };
