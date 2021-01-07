@@ -23,9 +23,22 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.scss$/,
+                test: /\.(sc|sa|c)ss$/,
                 use: [MiniCSSExtractPlugin.loader, "css-loader", "sass-loader"],
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.(jpg|png|gif|jpeg)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "static/",
+                            useRelativePath: true,
+                        },
+                    },
+                ],
             },
         ],
     },

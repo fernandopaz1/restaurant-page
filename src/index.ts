@@ -1,4 +1,5 @@
-import './styles/styles.scss';
+import './styles/styles.sass';
+import './static/openSourceLogo.png';
 
 import menu from "./menu";
 
