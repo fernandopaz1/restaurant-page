@@ -7,11 +7,14 @@
 div#menu
     background-color: aquamarine
     display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
     flex-direction: row
 
 div.divButton
     height: 1rem
     width: 20rem
+    display: flex
     justify-content: center
     @include outBorder()
     &:hover
