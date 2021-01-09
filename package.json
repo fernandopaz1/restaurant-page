@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "deploy": "npm run build&&gh-pages -d build",
+    "build": "rimraf dist/main.js && rimraf dist/styles.css && webpack",
+    "deploy": "rimraf dist/main.js && rimraf dist/styles.css && npm run build&&gh-pages -d build",
     "start": "webpack-cli serve --mode development"
   },
   "keywords": [],

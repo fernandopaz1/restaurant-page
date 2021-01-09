@@ -1,2 +1,20 @@
-div 
+=outBorder()
+    border: 1px solid black
+
+=changeColor($color)
+    background-color: $color 
+
+div#menu
     background-color: aquamarine
+    display: flex
+    flex-direction: row
+
+div.divButton
+    height: 1rem
+    width: 20rem
+    justify-content: center
+    @include outBorder()
+    &:hover
+        @include changeColor(red)
+        
+

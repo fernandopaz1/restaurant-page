@@ -1,3 +1,13 @@
-div {
-  background-color: aquamarine; }
+div#menu {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row; }
+
+div.divButton {
+  height: 1rem;
+  width: 20rem;
+  justify-content: center;
+  border: 1px solid black; }
+  div.divButton:hover {
+    background-color: red; }
 

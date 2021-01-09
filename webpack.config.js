@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/index.ts",
     output: {
         filename: "main.js",
-        path: path.resolve(__dirname, "../dist"),
+        path: path.resolve(__dirname, "dist"),
     },
     mode: "development",
     plugins: [
@@ -13,7 +13,6 @@ module.exports = {
             filename: "styles.css",
         }),
     ],
-    entry: "./src/index.ts",
     module: {
         rules: [
             {
