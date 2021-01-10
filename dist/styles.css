@@ -6,11 +6,21 @@ div#menu {
   flex-direction: row; }
 
 div.divButton {
-  height: 1rem;
-  width: 20rem;
+  height: 1.5rem;
+  width: 10rem;
   display: flex;
+  font-size: 1.1rem;
   justify-content: center;
-  border: 1px solid black; }
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  margin: 0.2rem;
+  border: 1px solid black;
+  background: linear-gradient(to bottom, #FFF 50%, #07f7cf 50%);
+  background-position: top;
+  background-size: 100% 200%;
+  transition: 0.4s ease-out;
+  transition: all 0.4s ease-in-out; }
   div.divButton:hover {
-    background-color: red; }
+    background-position: bottom; }
+  div.divButton:hover {
+    transform: scale(1.05); }
 
