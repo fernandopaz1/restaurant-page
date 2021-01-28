@@ -10,7 +10,7 @@ const slider = (): HTMLElement => {
     const slides = document.createElement("div");
     slides.classList.add("slides");
 
-    sliderDiv.appelsndChild(slides);
+    sliderDiv.appendChild(slides);
 
     for (let i = 1; i <= 4; i++) {
         slides.appendChild(radioButton("radio" + i));
