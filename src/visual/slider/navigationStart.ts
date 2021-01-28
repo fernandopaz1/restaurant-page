@@ -11,11 +11,11 @@ const navigationStart = (number: number): HTMLElement => {
 
     for (let i = 1; i <= number; i++) {
         let autoElement = document.querySelector("div");
-        autoElement.classList.add(`"auto-btn${i}"`);
+        // autoElement.classList.add(`auto-btn${i}`);
 
         let manualElement = document.querySelector("label");
 
-        manualElement.classList.add(`"manual-btn${i}"`);
+        // manualElement.classList.add(`manual-btn${i} `);
 
         autoStartDiv.appendChild(autoElement);
         manualStartDiv.appendChild(manualElement);
