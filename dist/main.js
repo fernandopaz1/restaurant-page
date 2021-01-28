@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.sass */ \"./src/styles/styles.sass\");\n/* harmony import */ var _static_openSourceLogo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./static/openSourceLogo.png */ \"./src/static/openSourceLogo.png\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.ts\");\n\n\n\ndocument.querySelector(\"div#content\").appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)());\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.sass */ \"./src/styles/styles.sass\");\n/* harmony import */ var _static_openSourceLogo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./static/openSourceLogo.png */ \"./src/static/openSourceLogo.png\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.ts\");\n/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ \"./src/slider.ts\");\n\n\n\n\ndocument.querySelector(\"div#content\").appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)());\ndocument.querySelector(\"div#content\").appendChild((0,_slider__WEBPACK_IMPORTED_MODULE_3__.default)());\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.ts?");
 
 /***/ }),
 
@@ -57,6 +57,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _divButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./divButton */ \"./src/divButton.ts\");\n\nvar menu = function () {\n    var home = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"Home\", function () {\n        console.log(\"carta\");\n    });\n    var carta = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"Menu\", function () {\n        console.log(\"carta\");\n    });\n    var about = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"About Us\", function () {\n        console.log(\"acerca\");\n    });\n    var reservations = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"Reservations\", function () {\n        console.log(\"carta\");\n    });\n    var events = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"Events\", function () {\n        console.log(\"carta\");\n    });\n    var contact = (0,_divButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"Contact\", function () {\n        console.log(\"carta\");\n    });\n    var element = document.createElement(\"div\");\n    element.id = \"menu\";\n    element.appendChild(home);\n    element.appendChild(carta);\n    element.appendChild(reservations);\n    element.appendChild(events);\n    element.appendChild(about);\n    element.appendChild(contact);\n    return element;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.ts?");
+
+/***/ }),
+
+/***/ "./src/radioButton.ts":
+/*!****************************!*\
+  !*** ./src/radioButton.ts ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nvar radioButton = function (id) {\n    var radio = document.createElement(\"input\");\n    radio.type = \"radio\";\n    radio.name = \"radio-btn\";\n    radio.id = id;\n    return radio;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (radioButton);\n\n\n//# sourceURL=webpack://restaurant-page/./src/radioButton.ts?");
+
+/***/ }),
+
+/***/ "./src/slider.ts":
+/*!***********************!*\
+  !*** ./src/slider.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _radioButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./radioButton */ \"./src/radioButton.ts\");\n\nvar slider = function () {\n    var sliderDiv = document.createElement(\"div\");\n    sliderDiv.classList.add(\"slider\");\n    var slides = document.createElement(\"div\");\n    slides.classList.add(\"slides\");\n    sliderDiv.appendChild(slides);\n    slides.appendChild((0,_radioButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"radio1\"));\n    slides.appendChild((0,_radioButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"radio2\"));\n    slides.appendChild((0,_radioButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"radio3\"));\n    slides.appendChild((0,_radioButton__WEBPACK_IMPORTED_MODULE_0__.default)(\"radio4\"));\n    return sliderDiv;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slider);\n\n\n//# sourceURL=webpack://restaurant-page/./src/slider.ts?");
 
 /***/ })
 
