@@ -1,4 +1,6 @@
 import radioButton from "./radioButton";
+import imageLoader from "./imageLoader"
+import navigationStart from "./navigationStart";
 
 const slider = (): HTMLElement => {
 
@@ -10,11 +12,12 @@ const slider = (): HTMLElement => {
 
     sliderDiv.appendChild(slides);
 
-    slides.appendChild(radioButton("radio1"));
-    slides.appendChild(radioButton("radio2"));
-    slides.appendChild(radioButton("radio3"));
-    slides.appendChild(radioButton("radio4"));
+    for (let i = 1; i <= 4; i++) {
+        slides.appendChild(radioButton("radio" + i));
+        slides.appendChild(imageLoader(i));
+    }
 
+    // slides.appendChild(navigationStart(4));
 
     return sliderDiv;
 };
