@@ -1,0 +1,24 @@
+
+$transitionTime: .4s
+
+=outBorder()
+    border: 1px solid black
+
+=changeColor($color, $delay)
+    background-color: $color
+    -webkit-transition: background-color $delay ease
+    -ms-transition: background-color $delay ease
+    transition: background-color $delay ease
+
+=fill($direction, $originalDirection,$originalColor, $newColor)
+    background: linear-gradient(to $direction, $originalColor 50%, $newColor 50%) 
+    background-position: $originalDirection
+    background-size: 100% 200%
+    transition: $transitionTime ease-out
+    &:hover
+        background-position: $direction
+
+=scale($max)
+    transition: all $transitionTime ease-in-out
+    &:hover
+        transform: scale(1.05)

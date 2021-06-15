@@ -1,0 +1,21 @@
+@import '_mixins.sass'
+
+div#menu
+    background-color: aquamarine
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    flex-direction: row
+
+div.divButton
+    height: 1.5rem
+    width: 10rem
+    display: flex
+    font-size: 1.1rem
+    justify-content: center
+    border-radius: 0.5rem 0.5rem 0rem 0rem
+    margin: 0.2rem
+    @include outBorder()
+    @include fill(bottom, top , #FFF,  #07f7cf)
+    @include scale(1.1)
+

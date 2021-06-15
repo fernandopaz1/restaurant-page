@@ -1,22 +1,18 @@
-const path = require('path');
-
+const path = require("path");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-<<<<<<< HEAD
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-=======
+    entry: "./src/index.ts",
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist"),
+    },
     mode: "development",
     plugins: [
         new MiniCSSExtractPlugin({
             filename: "styles.css",
         }),
     ],
-    entry: "./src/index.ts",
     module: {
         rules: [
             {
@@ -25,9 +21,22 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.scss$/,
+                test: /\.(sc|sa|c)ss$/,
                 use: [MiniCSSExtractPlugin.loader, "css-loader", "sass-loader"],
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.(jpg|png|gif|jpeg)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "static/",
+                            useRelativePath: true,
+                        },
+                    },
+                ],
             },
         ],
     },
@@ -38,5 +47,4 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
     },
->>>>>>> 46c1e90... ahora compila typescript y sass con webpack
 };
