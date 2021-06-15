@@ -1,5 +1,4 @@
 const imageLoader = (number: number): HTMLElement => {
-
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("slide");
     if (number === 1) {
